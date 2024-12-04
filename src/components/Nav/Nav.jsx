@@ -1,77 +1,73 @@
 import React from 'react'
 import './Nav.css'
-import { BiHome } from 'react-icons/bi'
+import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
+import Form from 'react-bootstrap/Form'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Offcanvas from 'react-bootstrap/Offcanvas'
+import { FaHome, FaSearch, FaList, FaDoorOpen, FaTrash, FaUser, FaImage, FaPhoneAlt, FaBriefcase, FaChessKing } from 'react-icons/fa'
+import Skills from 'Skills/Skills'
+import Work from 'Work/Work'
+
+
 
 const Nav = () => {
   return (
     <>
-      <nav
-        className="navbar navbar-expand-sm navbar-light bg-light"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#" aria-current="page"
-                  ><BiHome/> Home
-                  <span class="visually-hidden">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Dropdown</a
-                >
-                <div
-                  class="dropdown-menu"
-                  aria-labelledby="dropdownId"
-                >
-                  <a class="dropdown-item" href="#"
-                    >Action 1</a
+ <div className="Nav">
+      {['sm'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary navbar-sticky" data-bs-theme="dark">
+          <Container fluid>
+            <Navbar.Brand href="#" className='navBar'>GROUP 1</Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="nav-toggle"/>
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Menu
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#"><FaHome /> Home</Nav.Link>
+                  <Nav.Link href="#About"><FaList /> About</Nav.Link>
+                  <NavDropdown
+                    title="More"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                  <a class="dropdown-item" href="#"
-                    >Action 2</a
-                  >
-                </div>
-              </li>
-            </ul>
-            <form class="d-flex my-2 my-lg-0">
-              <input
-                class="form-control me-sm-2"
-                type="text"
-                placeholder="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>  
-    </>
+                    <NavDropdown.Item href="#action3"><FaPhoneAlt /> Contact</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      <FaImage /> Hero
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="Skills">
+                    <FaChessKing /> Skills
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href='Work'>
+                     <FaBriefcase /> Work
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+                <Form className="d-flex">
+                  <Form.Control
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-primary"><FaSearch /></Button>
+                </Form>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+      </div>
+    </> 
   )
 }
 
