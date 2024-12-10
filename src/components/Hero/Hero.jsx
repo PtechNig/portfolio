@@ -1,65 +1,53 @@
-import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image'
+import { motion } from 'framer-motion';
 import './Hero.css'
 
-const fadeImages = [
-  {
-    url: '/assets/image-1.jpg',
-    caption: 'Innovating the Future of Technology',
-    title: 'A futuristic cityscape with digital overlays, symbolizing innovation and technology.',
-    paragraphy: "Welcome to our journey in software engineering. Together, we're building tomorrow's technology, one line of code at a time."
-  },
-  {
-    url: '/assets/image-2.jpg',
-    caption: 'Collaboration is Key',
-    title: 'A diverse group of students working together on laptops, surrounded by whiteboards with brainstorming ideas.',
-    paragraphy: "Teamwork and creativity drive us forward. This is where ideas become solutions."
-  },
-  {
-    url: '/assets/image-3.jpg',
-    caption: 'Learning, Building, Growing',
-    title: 'A symbolic image of a seedling growing into a tree with binary code integrated into the branchesA symbolic image of a seedling growing into a tree with binary code integrated into the branches.',
-    paragraphy: "From coding basics to advanced problem-solving, we are growing as engineers with every project."
-  },
-  
-  {
-    url: '/assets/image-4.jpg',
-    caption: 'Our First Steps in Engineering',
-    title: 'A keyboard with the "Enter" key highlighted, representing taking the first step.',
-    paragraphy: "This is our first project, the start of something extraordinary. The future is ours to create."
-  }
-];
 
 
 const Hero = () => {
 
+  const boxVariants = {
+    hidden: { opacity: 0, x: -300 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+
+  const imageVariants = {
+    hidden: { opacity: 0, y: -300 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
-    <div className="slide-container">
-      <Slide
-        duration={10000}
-        transitionDuration={1000}
-        autoplay={true}
-        infinite={true}
-        arrows={false}
-        indicators={false}
+    <div className='hero-wrapper'>
+            <div className="hero-container">
+        <motion.div className='hero-content'
+        
+        variants={boxVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.8 }}
+        
+        >
+            <h1>Hi, We're </h1>
+           <p> <strong> Group 1 Students </strong> </p>
+           <p>Turning Ideas into Reality! </p>
+           <p>We are passionate Software Engineers dedicated to building innovative and user-focused solutions with React</p>
+           <div className='btn'>
+                <a className='resume' href="/assets/resume.pdf" download='resume'> Download my Resume</a>
+                <a className='chat' href="https://wa.me/08035879166" >Let's chat </a>
+           </div>
 
-      >
-        {fadeImages.map((fadeImage, index) => (
-          <div className='hero-container' key={index}>
-            <img style={{ width: '100%' }} src={fadeImage.url} />
-            <div className='content'>
-              
-              <div 
-              className='text'>
-                <h2>{fadeImage.caption}</h2>
-                <p>{fadeImage.title}</p>
-                <p>{fadeImage.paragraphy}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slide>
+        </motion.div>
+        <motion.div className='hero-image' 
+        
+        variants={imageVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.8 }}
+        
+        >
+            <img src="/assets/hero-image.png" alt="" />
+        </motion.div>
+    </div>
     </div>
   )
 }

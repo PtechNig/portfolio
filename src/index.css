@@ -10,3 +10,7 @@
 body {
   font-family: "Arima", serif;
 }
+
+a {
+  text-decoration: none;
+}
