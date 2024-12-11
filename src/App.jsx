@@ -12,12 +12,13 @@ function App() {
   return (
     <>
     <Nav/>
-    <Hero/>
+    {/* Had to comment out this part cause it's showing on the page since the sections have not been done.*/}
+    {/* <Hero/>
     <About/>
     <Skill/>
     <Work/>
     <Contact/>
-    <Footer/>
+    <Footer/> */}
     </>
   )
 }
