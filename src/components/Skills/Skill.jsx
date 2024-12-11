@@ -1,5 +1,5 @@
 import './Skill.css'
-import { motion, transform } from 'framer-motion';
+import { motion} from 'framer-motion';
 
 const Skill = () => {
 
