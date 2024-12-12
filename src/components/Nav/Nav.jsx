@@ -3,7 +3,7 @@ const navbar = () => {
   return (
     <div className='navbar_container'>
       <div className='logo'>
-       <img src='/assets/group logo.png' alt='' className='logo'/>
+       <img src='/assets/group-logo.png' alt='' className='logo'/>
       </div>
           <ul>
             <li> HOME </li>
