@@ -13,12 +13,12 @@ function App() {
     <>
     <Nav/>
     {/* Had to comment out this part cause it's showing on the page since the sections have not been done.*/}
-    {/* <Hero/>
+    <Hero/>
     <About/>
     <Skill/>
     <Work/>
     <Contact/>
-    <Footer/> */}
+    <Footer/>
     </>
   )
 }
