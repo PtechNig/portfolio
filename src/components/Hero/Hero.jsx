@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='hero-wrapper'>
+    <div id='hero' className='hero-wrapper'>
             <div className="hero-container">
         <motion.div className='hero-content'
         
@@ -33,7 +33,7 @@ const Hero = () => {
            <p>We are passionate Software Engineers dedicated to building innovative and user-focused solutions with React</p>
            <div className='btn'>
                 <a className='resume' href="/assets/resume.pdf" download='resume'> Download my Resume</a>
-                <a className='chat' href="https://wa.me/08035879166" >Let's chat </a>
+                <a className='chat' target='_blank' href="https://wa.me/08035879166"  >Let's chat </a>
            </div>
 
         </motion.div>

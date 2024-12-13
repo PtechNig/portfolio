@@ -1,0 +1,69 @@
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.about-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about-left img{
+    width: 100%;
+}
+
+.about-right  {
+    color: rgb(255, 255, 182);
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.about-right p{
+    line-height: 1.5;
+}
+.about-title h1{
+    color: yellow;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 2rem;
+}
+
+.about-title h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    left: 0;
+    bottom: 0;
+}
+
+.about-right .experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-right .experience-container div{
+    background-color: rgb(29, 29, 20);
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.about-right .experience-container div:hover{
+    transform: scale(0.9);
+}
+
+.experience-container .experience h2{
+    color: yellow;
+}

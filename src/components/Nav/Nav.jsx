@@ -1,4 +1,5 @@
 import "./Nav.css"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 const navbar = () => {
   return (
     <div className='navbar_container'>
@@ -6,11 +7,12 @@ const navbar = () => {
        <img src='/assets/group-logo.png' alt='' className='logo'/>
       </div>
           <ul>
-            <li> HOME </li>
-            <li>ABOUT</li>
-            <li>SKILLS</li>
-            <li>WORK</li>
-            <li>CONTACT</li>
+            <li> <AnchorLink  href="#hero"> HOME</AnchorLink>  </li>
+            <li> <AnchorLink offset={50} href="#about">ABOUT</AnchorLink> </li>
+            <li> <AnchorLink offset={30} href="#skill">SKILLS</AnchorLink> </li>
+            <li> <AnchorLink offset={70} href="#work">WORK</AnchorLink> </li>
+            <li> <AnchorLink offset={50} href="#contact">CONTACT</AnchorLink> </li>
+
           </ul>
     </div>
   )
