@@ -1,5 +1,5 @@
 .contact-wrapper{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -88,4 +88,18 @@ button:hover{
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-wrapper{
+        height: 150vh;
+
+    }
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+
 }

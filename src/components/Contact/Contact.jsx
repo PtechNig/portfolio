@@ -2,6 +2,8 @@ import './Contact.css'
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
+import { motion} from 'framer-motion';
+
 
 const Contact = () => {
   return (
@@ -10,7 +12,27 @@ const Contact = () => {
         <h1>Get in touch</h1>
       </div>
       <div className='contact-container'>
-        <div className='contact-left'>
+        <motion.div className='contact-left'
+        
+        initial={
+          {
+            opacity: 0, x: -200
+          }
+        }
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+        viewport={{
+          amount: "1",
+          margin: "0px",
+        once: true
+
+        }}
+        animate="visible"
+        transition={{ duration: 1 }}
+        
+        >
           <h4>Let's talk</h4>
           <p>We are currently available to pick up your next project, so feel free to send us message. You can contact us anytime</p>
 
@@ -29,8 +51,28 @@ const Contact = () => {
             </div>
           </div>
 
-        </div>
-        <div className='contact-right'>
+        </motion.div>
+        <motion.div className='contact-right'
+        
+        initial={
+          {
+            opacity: 0, y: 200
+          }
+        }
+        whileInView={{
+          opacity: 1,
+          y: 0
+        }}
+        viewport={{
+          amount: "1",
+          margin: "0px",
+        once: true
+
+        }}
+        animate="visible"
+        transition={{ duration: 1 }}
+        
+        >
         <form >
               <div>
                 <label htmlFor="name">Your Name</label>
@@ -48,7 +90,7 @@ const Contact = () => {
               </div>
               <button type="submit">Submit</button>
             </form>
-        </div>
+        </motion.div>
 
       </div>
     </div>

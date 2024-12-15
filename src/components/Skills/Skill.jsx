@@ -3,24 +3,28 @@ import { motion} from 'framer-motion';
 
 const Skill = () => {
 
-  const textVariants = {
-    hidden: { opacity: 0, y: -400 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  const boxVariants = {
-    hidden: { opacity: 0, x: 300 },
-    visible: { opacity: 1, x: 0 },
-  };
-
+ 
   return (
     <div id='skill' className='skill-wrapper'>
       <div className='skill-container'>
         <div className='left'>
           <motion.h1
           
-          variants={textVariants}
-          initial="hidden"
+          initial={
+            {
+              opacity: 0, y: -100
+            }
+          }
+          whileInView={{
+            opacity: 1,
+            y: 0
+          }}
+          viewport={{
+            amount: "1",
+            margin: "0px",
+          once: true
+
+          }}
           animate="visible"
           transition={{ duration: 1 }}
 
@@ -29,8 +33,20 @@ const Skill = () => {
         </div>
         <motion.div className='right'
         
-        variants={boxVariants}
-        initial="hidden"
+        initial={
+          {
+            opacity: 0, x: 300
+          }
+        }
+
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+        viewport={{
+          amount: "0.5",
+          once: true
+        }}
         animate="visible"
         transition={{ duration: 1.2 }}
         

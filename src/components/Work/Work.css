@@ -1,6 +1,5 @@
 .work-wrapper{
     width: 100vw;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,4 +68,13 @@
 .work-subtitle h4:hover::after{
     width: 100%;
     
+}
+
+
+@media (max-width: 600px) {
+
+    .work-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }

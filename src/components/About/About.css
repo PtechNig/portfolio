@@ -67,3 +67,18 @@
 .experience-container .experience h2{
     color: yellow;
 }
+
+@media (max-width: 600px) {
+    .about-wrapper{
+    margin-bottom: 50px;
+    text-align: center;
+    height: 150vh;
+    }
+    .about-container {
+    grid-template-columns: 1fr;
+      
+      }
+  
+ 
+
+  }

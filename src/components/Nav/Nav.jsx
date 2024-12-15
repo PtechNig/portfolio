@@ -7,9 +7,9 @@ const navbar = () => {
        <img src='/assets/group-logo.png' alt='' className='logo'/>
       </div>
           <ul>
-            <li> <AnchorLink  href="#hero"> HOME</AnchorLink>  </li>
-            <li> <AnchorLink offset={50} href="#about">ABOUT</AnchorLink> </li>
-            <li> <AnchorLink offset={30} href="#skill">SKILLS</AnchorLink> </li>
+            <li> <AnchorLink  href="#hero"> HOME </AnchorLink>  </li>
+            <li> <AnchorLink offset={40} href="#about">ABOUT</AnchorLink> </li>
+            <li> <AnchorLink offset={100} href="#skill">SKILLS</AnchorLink> </li>
             <li> <AnchorLink offset={70} href="#work">WORK</AnchorLink> </li>
             <li> <AnchorLink offset={50} href="#contact">CONTACT</AnchorLink> </li>
 

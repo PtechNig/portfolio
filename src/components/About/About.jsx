@@ -1,4 +1,6 @@
 import './About.css'
+import { motion} from 'framer-motion';
+
 
 const About = () => {
   return (
@@ -8,10 +10,50 @@ const About = () => {
 
       </div>
       <div className='about-container'>
-        <div className='about-left'>
+        <motion.div className='about-left'
+        
+        initial={
+          {
+            opacity: 0, x: -200
+          }
+        }
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+        viewport={{
+          amount: "1",
+          margin: "0px",
+        once: true
+
+        }}
+        animate="visible"
+        transition={{ duration: 1 }}
+        
+        >
           <img src="/assets/image-1.jpg" alt="" />
-        </div>
-        <div className='about-right'>
+        </motion.div>
+        <motion.div className='about-right'
+        
+        initial={
+          {
+            opacity: 0, y: -200
+          }
+        }
+        whileInView={{
+          opacity: 1,
+          y: 0
+        }}
+        viewport={{
+          amount: "1",
+          margin: "0px",
+        once: true
+
+        }}
+        animate="visible"
+        transition={{ duration: 1 }}
+
+        >
           <p>
             I’m always looking for opportunities to grow, collaborate with talented teams, and build products that have a meaningful impact. My expertise lies in JavaScript language and I’m proficient in frameworks like React and Node.js. I’m constantly learning and adapting to the latest tech trends to stay at the cutting edge of the industry.
           </p>
@@ -37,7 +79,7 @@ const About = () => {
 
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
 
