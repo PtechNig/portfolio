@@ -72,13 +72,15 @@
     .about-wrapper{
     margin-bottom: 50px;
     text-align: center;
-    height: 150vh;
+    height: 170vh;
     }
     .about-container {
     grid-template-columns: 1fr;
       
       }
   
- 
+      .about-right .experience-container{
+        grid-template-columns: 1fr;
+    }
 
   }
