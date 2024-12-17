@@ -31,7 +31,7 @@ const Hero = () => {
            <p> <strong> Group 1 Students </strong> </p>
            <p>Turning Ideas into Reality! </p>
            <p>We are passionate Software Engineers dedicated to building innovative and user-focused solutions with React</p>
-           <div className='btn'>
+           <div className='hero-btn'>
                 <a className='resume' href="/assets/resume.pdf" download='resume'> Download my Resume</a>
                 <a className='chat' target='_blank' href="https://wa.me/08035879166"  >Let's chat </a>
            </div>

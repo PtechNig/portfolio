@@ -50,11 +50,11 @@ const Work = () => {
       
       initial={
         {
-          opacity: 0
+          opacity: 0, x : 200
         }
       }
       whileInView={{
-        opacity: 1,
+        opacity: 1, x : 0
         
       }}
       viewport={{
