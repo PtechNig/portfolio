@@ -2,12 +2,30 @@ import CustomSlider from '../Pages/CustomSlider'
 import './Work.css'
 import { motion } from 'framer-motion'
 import Carousel from 'react-multi-carousel'
-
-const Work = () => {
-import { motion } from 'framer-motion';
 import images from '../db/Data';
 import { useState } from 'react';
 
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+	partialVisibilityGutter: 40
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+	partialVisibilityGutter: 30
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+	partialVisibilityGutter: 30
+  }
+};
 
 const Work = () => {
 
@@ -94,8 +112,27 @@ const Work = () => {
 
       <div className='testimonial'>
         <h3>What Our Customers say</h3>
-<<<<<<< HEAD
-          <Carousel responsive={responsive}>
+          <Carousel 
+		   swipeable={false}
+		   centerMode={true}
+		   clickable={false}
+           draggable={false}
+		   focusOnSelect
+           showDots={true}
+           responsive={responsive}
+           ssr={true} // means to render carousel on server-side.
+           infinite={true}
+           autoPlay={this.props.deviceType !== "mobile" ? true : false}
+		   pauseOnHover
+           autoPlaySpeed={700}
+           keyBoardControl={true}
+           customTransition="all .5"
+           transitionDuration={500}
+           containerClass="carousel-container"
+           removeArrowOnDeviceType={["mobile"]}
+           deviceType={this.props.deviceType}
+           dotListClass="custom-dot-list-style"
+           itemClass="carousel-item-padding-40-px">
             <div className='carousel'>
               <div className='card'>
                 <div className='card-img'></div>
@@ -107,6 +144,36 @@ const Work = () => {
                 </div>
               </div>
               
+              <div className='card'>
+                <div className='card-img'></div>
+                <div className='card-body'>
+                 <div className="card-title"></div>
+                 <div className="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
+                 </div>
+                </div>
+              </div>
+
+              <div className='card'>
+                <div className='card-img'></div>
+                <div className='card-body'>
+                 <div className="card-title"></div>
+                 <div className="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
+                 </div>
+                </div>
+              </div>			  
+
+              <div className='card'>
+                <div className='card-img'></div>
+                <div className='card-body'>
+                 <div className="card-title"></div>
+                 <div className="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
+                 </div>
+                </div>
+              </div>
+			  
               <div className='card'>
                <div className='card-img'></div>
                <div className='card-body'>
@@ -139,9 +206,6 @@ const Work = () => {
             </div>
           </Carousel>
           <CustomSlider />
-=======
-        <CustomSlider />
->>>>>>> 96d5f02d9ae831bfbfd87af3d3b29634aa90f60f
       </div>
     </div>
 
