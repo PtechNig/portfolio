@@ -135,9 +135,9 @@ const Work = () => {
            itemClass="carousel-item-padding-40-px">
             <div className='carousel'>
               <div className='card'>
-                <div className='card-img'></div>
+                <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                 <div className='card-body'>
-                 <div className="card-title"></div>
+                 <div className="card-title">User name</div>
                  <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                  </div>
@@ -145,9 +145,9 @@ const Work = () => {
               </div>
               
               <div className='card'>
-                <div className='card-img'></div>
+                <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                 <div className='card-body'>
-                 <div className="card-title"></div>
+                 <div className="card-title">User name</div>
                  <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                  </div>
@@ -155,9 +155,9 @@ const Work = () => {
               </div>
 
               <div className='card'>
-                <div className='card-img'></div>
+                <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                 <div className='card-body'>
-                 <div className="card-title"></div>
+                 <div className="card-title">User name</div>
                  <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                  </div>
@@ -165,9 +165,9 @@ const Work = () => {
               </div>			  
 
               <div className='card'>
-                <div className='card-img'></div>
+                <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                 <div className='card-body'>
-                 <div className="card-title"></div>
+                 <div className="card-title">User name</div>
                  <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                  </div>
@@ -175,9 +175,9 @@ const Work = () => {
               </div>
 			  
               <div className='card'>
-               <div className='card-img'></div>
+               <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                <div className='card-body'>
-                <div className="card-title"></div>
+                <div className="card-title">User name</div>
                 <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                 </div>
@@ -185,9 +185,9 @@ const Work = () => {
               </div>
 
               <div className='card'> 
-               <div className='card-img'></div>
+               <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                 <div className='card-body'>
-                 <div className="card-title"></div>
+                 <div className="card-title">User name</div>
                  <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                  </div>
@@ -195,9 +195,9 @@ const Work = () => {
               </div>
 
               <div className='card'>
-              <div className='card-img'></div>
+              <div className='card-img'><img src="../../../public/assets/hedy lamarr.png" alt='User image' /></div>
                 <div className='card-body'>
-                 <div className="card-title"></div>
+                 <div className="card-title">User name</div>
                  <div className="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo veritatis rem odio porro dolores natus delectus, dolore debitis, magnam vitae blanditiis sit nemo saepe eum inventore voluptatum repudiandae excepturi.
                  </div>
