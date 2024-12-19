@@ -1,71 +1,92 @@
-Nav {
- min-height: 100vh;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
- justify-content: space-between;
-}
 
-nav ul {
- width: 100%;
- list-style: none;
- display: flex;
- align-items: center;
-}
+ .navbar_container{
+     width: 100%;
+     height: 10vh;
+    background-color: rgb(15, 15, 0);
 
-Nav li {
- height: 50px;
-}
-
-Nav a {
- height: 100%;
- padding: 0 30px;
- text-decoration: none;
- color: #000;
-}
-
-Nav a:hover{
- background-color: #f0f0f0;
-}
-
-Nav li:first-child {
- margin-right: auto;
-}
-
-.sidebar {
- position: fixed;
- top: 0;
- right: 0;
- height: 100vh;
- width: 250px;
- z-index: 999;
- background-color: #272727;
- box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
- backdrop-filter: blur(10px);
- display: none;
- flex-direction: column;
- align-items: flex-start;
- justify-content: flex-start;
-}
-
-.menu-button {
- display: none;
-}
-
-.sidebar li{
- width: 100%;
-}
-
-@media(max-width: 800px){
- .hideitems {
-  display: none;
+     position: fixed;
+     margin: 0px auto; 
+     align-items: center;
+     justify-content: space-between;
+     display: flex;
+     padding: 20px;
+     border-bottom:  1px solid yellow;
+     z-index: 100;
  }
- .menu-button {
-  display: block;
+ .navbar_container .logo{
+    height: 12vh;
+    width: 12vh;
+    transition: 0.5s;
+    cursor: pointer;
  }
+
+ .navbar_container .logo:hover{
+    transform: rotate(360deg);
+ }
+ ul{
+    display: flex;
+    align-items: center;
+    margin: 0px 4px;
+    color: rgb(255, 255, 182);
+    list-style-type: none;
+    overflow: hidden;
+}
+ul li{
+    margin: 0px;
+    width: 110px;
+    font-size: medium;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.5s;
+    border-radius: 5px;
 }
 
-@media(max-width: 400px){
- .sidebar {
-  width: 100%;
- }
+ul li:hover{
+    background-color: yellow;
+    color: rgb(5, 0, 0);
+}
+
+.navbar_container ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-icon,
+.close {
+    display: none;
+}
+
+
+
+@media (max-width: 600px) {
+
+
+
+.ul {
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 65px;
+    right: -40%;
+    justify-content: center;
+    background-color: rgb(29, 29, 20);
+    width: 40%;
+    transition: 0.5s;
+}
+
+.open{
+    right: 0;
+}
+
+.nav-icon,
+.close {
+    display: block;
+    font-size: 1.3rem;
+}
+
+
 }
